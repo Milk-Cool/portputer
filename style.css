@@ -102,3 +102,12 @@ a {
 .card.ul * {
     text-decoration: underline;
 }
+.q {
+    text-align: left;
+}
+.a {
+    text-align: right;
+}
+.q > .card, .a > .card {
+    max-width: 40em;
+}

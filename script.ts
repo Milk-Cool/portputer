@@ -12,3 +12,9 @@ new LeaderLine(
     document.querySelector("#card6"),
     { color: "black" }
 );
+for(let i = 7; i <= 12; i += 2)
+    new LeaderLine(
+        document.querySelector("#card" + i.toString()),
+        document.querySelector("#card" + (i + 1).toString()),
+        { color: ["orangered", "yellowgreen", "blueviolet"][Math.floor(Math.random() * 3)], endSocket: "top" }
+    );
