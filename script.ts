@@ -12,6 +12,11 @@ new LeaderLine(
     document.querySelector("#card6"),
     { color: "black" }
 );
+new LeaderLine(
+    document.querySelector("#card6"),
+    document.querySelector("#card13"),
+    { color: "black" }
+);
 for(let i = 7; i <= 12; i += 2)
     new LeaderLine(
         document.querySelector("#card" + i.toString()),
