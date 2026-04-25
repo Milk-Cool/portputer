@@ -1,0 +1,25 @@
+{
+  "name": "portputer",
+  "version": "0.1.0",
+  "description": "portputer ysws website",
+  "homepage": "https://github.com/Milk-Cool/portputer#readme",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/portputer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/portputer.git"
+  },
+  "license": "MIT",
+  "author": "Milk_Cool",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.10"
+  }
+}

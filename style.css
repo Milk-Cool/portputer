@@ -1,0 +1,104 @@
+@media only screen and (max-width: 100vh) {
+    #logo-norm {
+        display: none !important;
+    }
+    #logo-vert {
+        display: inline-block !important;
+    }
+}
+#logo-vert {
+    display: none;
+}
+* {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+#content {
+    background: #eee;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100vh - 4em);
+    max-width: calc(100vw - 4em);
+    min-height: 100vh;
+    text-align: center;
+}
+img {
+    width: 100%;
+    max-width: 40em;
+}
+img, .card {
+    border-radius: .5em;
+}
+.card {
+    display: inline-block;
+    margin: .5em;
+}
+.card > * {
+    padding: .5em;
+    text-align: center;
+}
+.card > div:nth-child(1) {
+    font-weight: bold;
+    border-radius: .5em .5em 0 0;
+}
+.card-red {
+    background: #F59D9C;
+}
+.card-red > div:nth-child(1) {
+    background: #C62C60;
+    color: white;
+}
+.card-rasp {
+    background: #FF6597;
+}
+.card-rasp > div:nth-child(1) {
+    background: #C22D60;
+    color: white;
+}
+.card-gray {
+    background: #212120;
+    color: white;
+}
+.card-gray > div:nth-child(1) {
+    background: #212120;
+    color: white;
+}
+.card-blue {
+    background: #9ED9F7;
+}
+.row-1 {
+    text-align: left;
+}
+.row-2 {
+    text-align: right;
+}
+#logo > * {
+    box-shadow: .5em .5em .5em #0004;
+}
+#logo {
+    width: fit-content;
+    display: inline-block;
+}
+.vs {
+    margin-top: 6em;
+}
+.vsl {
+    margin-top: 3em;
+}
+a {
+    color: unset;
+    text-decoration: underline;
+}
+#card6 > * {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.ib {
+    display: inline-block;
+}
+.card.ul * {
+    text-decoration: underline;
+}
