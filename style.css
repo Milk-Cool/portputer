@@ -15,6 +15,9 @@
 body {
     margin: 0;
 }
+.leader-line {
+    z-index: 0 !important;
+}
 #content {
     background: #eee;
     padding: 1em;
