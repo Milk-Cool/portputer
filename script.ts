@@ -1,3 +1,9 @@
+const cb = (resolve: Function) => {
+    if("LeaderLine" in window) resolve();
+    else setTimeout(cb, 1, resolve);
+};
+await new Promise(cb);
+
 // @ts-ignore
 const LeaderLine: any = window.LeaderLine;
 
