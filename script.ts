@@ -1,13 +1,14 @@
-const cb = (check: Function) => (resolve: Function) => {
-    if(check()) resolve();
-    else setTimeout(cb, 1, resolve);
-};
-// @ts-ignore // idc
-await new Promise(cb(() => "LeaderLine" in window));
-// @ts-ignore
-await new Promise(cb(() => (document.querySelector("#logo-norm") as HTMLImageElement).complete));
-// @ts-ignore
-await new Promise(cb(() => (document.querySelector("#logo-vert") as HTMLImageElement).complete));
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+while(!("LeaderLine" in window))
+    // @ts-ignore // idc
+    await delay(1);
+while(!(document.querySelector("#logo-norm") as HTMLImageElement).complete)
+    // @ts-ignore
+    await delay(1);
+while(!(document.querySelector("#logo-vert") as HTMLImageElement).complete)
+    // @ts-ignore
+    await delay(1);
 
 // @ts-ignore
 const LeaderLine: any = window.LeaderLine;
