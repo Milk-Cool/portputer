@@ -2,6 +2,7 @@ const cb = (resolve: Function) => {
     if("LeaderLine" in window) resolve();
     else setTimeout(cb, 1, resolve);
 };
+// @ts-ignore // idc
 await new Promise(cb);
 
 // @ts-ignore
