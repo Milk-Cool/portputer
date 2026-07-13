@@ -38,6 +38,8 @@ img, .card {
 .card {
     display: inline-block;
     margin: .5em;
+    position: relative;
+    z-index: 1;
 }
 .card > * {
     padding: .5em;
@@ -49,6 +51,7 @@ img, .card {
 }
 .card-red {
     background: #F59D9C;
+    z-index: 5;
 }
 .card-red > div:nth-child(1) {
     background: #C62C60;

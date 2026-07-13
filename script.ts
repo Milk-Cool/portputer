@@ -13,7 +13,7 @@ while(!(document.querySelector("#logo-vert") as HTMLImageElement).complete)
 // @ts-ignore
 const LeaderLine: any = window.LeaderLine;
 
-for(let i = 1; i <= 4; i++)
+for(let i = 0; i <= 4; i++)
     new LeaderLine(
         document.querySelector("#card" + i.toString()),
         document.querySelector("#logo"),
